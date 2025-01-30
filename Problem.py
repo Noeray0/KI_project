@@ -31,7 +31,6 @@ locations_df = pd.read_csv('archive/locations.csv')
 mans_df = pd.read_csv('archive/mans.csv')
 print("done")
 
-
 # Check for missing values in the price dataset
 price_df.isnull().sum()
 
