@@ -38,3 +38,10 @@ price_df.isnull().sum()
 # Convert date columns to datetime in applications_df
 applications_df['upload_date'] = pd.to_datetime(applications_df['upload_date'], errors='coerce')
 applications_df['insert_date'] = pd.to_datetime(applications_df['insert_date'], errors='coerce')
+
+# Visualize the distribution of car prices
+sns.histplot(price_df['price'], bins=50, kde=True)
+plt.title('Distribution of Car Prices')
+plt.xlabel('Price')
+plt.ylabel('Frequency')
+plt.show()
