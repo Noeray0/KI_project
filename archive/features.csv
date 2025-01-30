@@ -1,0 +1,33 @@
+﻿id,parent_id,feature
+1,0,Comfort
+2,0,Interior
+3,0,Safety
+4,0,Multimedia
+5,0,Other
+6,1,Steering Hydraulics
+7,1,On-Board Computer
+8,1,Air Conditioning
+9,1,Parking Control
+10,1,Rear View Camera
+11,1,Electric Side Mirros
+12,1,Climate Control
+13,1,Cruise Control
+15,1,Start-Stop System
+20,2,Sunroof
+23,2,Heated Seats
+26,2,Memory Seats
+28,3,ABS
+29,3,ESP
+30,3,Central Locking
+31,3,Alarm System
+36,3,Fog Lamp
+38,4,Central Screen (Navigation)
+39,4,AUX
+41,4,Bluetooth
+43,4,Multifunction Steering Wheel
+44,5,Rims
+45,5,Spare Tyre
+48,1,Ветровое стекло
+50,5,Accessible for PWD
+51,5,Trunk
+52,1,Electric Starter

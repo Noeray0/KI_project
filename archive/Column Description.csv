@@ -1,0 +1,98 @@
+Table Name,Column Name,Description
+agreement,app_id,"The primary key that uniquely identifies each record in the table, likely corresponding to a specific vehicle or listing."
+agreement,changeable,"Indicates whether the terms of the agreement are negotiable (e.g., price or other conditions can be adjusted)."
+agreement,auction,Specifies if the vehicle is available for purchase via auction.
+agreement,for_rent,Specifies if the vehicle is available for rent in any capacity.
+agreement,rent_daily,Indicates if the vehicle can be rented on a daily basis.
+agreement,rent_purchase,Suggests whether there is a rent-to-own option available for the vehicle.
+agreement,rent_insured,States whether rental agreements include insurance coverage.
+agreement,rent_driver,Indicates if a driver is included in the rental agreement.
+applications,app_id,"The primary key that uniquely identifies each record in the table, corresponding to a specific listing."
+applications,user_id,The unique identifier for the user who created or owns the listing.
+applications,status,"Represents the listing status, which can be one of the following values: S-VIP, VIP, or Standard."
+applications,upload_date,The date when the listing was uploaded to the platform.
+applications,vehicle_type,"Indicates the type of vehicle being listed, such as car, motorcycle, or costume vehicle."
+applications,category,"Specifies the category of the vehicle, such as sedan, jeep, pickup, etc."
+applications,Insert_date,The date when the record was inserted into the database.
+colors,id,The primary key that uniquely identifies each color entry in the table.
+colors,color_code,"A string representing the color in code format, often used for referencing specific shades (e.g., hex or custom code)."
+colors,color_name,"The descriptive name of the color (e.g., Red, Blue, Black)."
+comfort_features,app_id,"The foreign key referencing the vehicle listing in the applications table, indicating which vehicle has the feature."
+comfort_features,feature_id,"The foreign key referencing the specific comfort feature, linking to a features or related table."
+depreciation,app_id,The primary key linking the record to a specific vehicle listing in the dataset.
+depreciation,car_run_km,"The total kilometers (or miles) the vehicle has been driven, indicating its usage."
+depreciation,engine_volume,"The engine capacity or volume (measured in cubic centimeters or liters), representing the vehicle's engine size."
+depreciation,prod_year,"The production year of the vehicle, indicating its age."
+depreciation,cylinders,"The number of cylinders in the vehicle's engine, reflecting its performance and efficiency."
+depreciation,airbags,"The number of airbags present in the vehicle, representing its safety features."
+extra_options,app_id,The primary key linking the record to a specific vehicle listing.
+extra_options,abs_break,Indicates whether the vehicle is equipped with an anti-lock braking system (ABS).
+extra_options,esd,Indicates whether the vehicle has an electronic stability control system.
+extra_options,el_windows,Indicates if the vehicle has electric windows.
+extra_options,conditioner,Indicates if the vehicle has air conditioning.
+extra_options,leather,Indicates if the vehicle has leather seats or interior.
+extra_options,disks,Indicates if alloy or specialized disks are installed.
+extra_options,nav_system,Indicates whether the vehicle is equipped with a navigation system.
+extra_options,central_lock,Indicates if the vehicle has a central locking system.
+extra_options,hatch,Indicates whether the vehicle is equipped with a hatchback or liftgate.
+extra_options,right_wheel,Indicates if the vehicle is a right-hand drive.
+extra_options,alarm,Indicates if the vehicle has an anti-theft alarm system.
+extra_options,board_comp,Indicates if the vehicle is equipped with an onboard computer system.
+extra_options,hydraulics,Indicates if the vehicle features hydraulic suspension or systems.
+extra_options,chair_warming,Indicates if the vehicle has heated seats.
+extra_options,climat_control,Indicates if the vehicle features climate control.
+extra_options,obstacle_indicator,Indicates if the vehicle has obstacle detection or parking sensors.
+extra_options,customs_passed,Indicates if the vehicle has passed customs clearance (for imported vehicles).
+extra_options,tech_inspection,Indicates if the vehicle has passed technical inspection.
+extra_options,has_turbo,Indicates if the vehicle is equipped with a turbocharged engine.
+extra_options,back_camera,Indicates if the vehicle is equipped with a rearview or backup camera.
+extra_options,special_persons,Indicates if the vehicle is modified or adapted for individuals with special needs.
+extra_options,start_stop,Indicates if the vehicle has an engine start-stop system for fuel efficiency.
+extra_options,trunk,Indicates if the vehicle has a trunk or designated cargo area.
+extra_options,windshield,Indicates if the vehicle is equipped with a windshield or specific windshield features.
+extra_options,inspected_in_greenway,Indicates if the vehicle has been inspected and certified in specific vender.
+extra_options,has_catalyst,Indicates if the vehicle has a catalytic converter for emissions control.
+extra_options,has_vin,Indicates if the vehicle has a verified Vehicle Identification Number (VIN).
+features,id,The primary key uniquely identifying each feature entry in the table.
+features,parent_id,"References the ID of a parent feature, creating a hierarchical relationship. If NULL, it indicates a top-level feature."
+features,feature,"The name or description of the feature (e.g., ""Air Conditioning,"" ""Sunroof"")."
+fuel,id,The primary key uniquely identifying each fuel type entry in the table.
+fuel,parent_id,"References the ID of a parent fuel type, enabling the creation of hierarchical relationships. If 0, it represents a top-level fuel type."
+fuel,fuel_type,"The name or description of the fuel type (e.g., ""Petrol,"" ""Diesel,"" ""Electric"")."
+gear,id,The primary key uniquely identifying each gear type entry in the table.
+gear,parent_id,"References the ID of a parent gear type, enabling the creation of hierarchical relationships. If 0, it represents a top-level gear type."
+gear,gear_type,"The name or description of the gear type (e.g., ""Automatic,"" ""Manual,"" ""CVT"")."
+locations,id,The primary key uniquely identifying each location entry in the table.
+locations,parent_id,"References the ID of a parent location, enabling the creation of hierarchical relationships. If 0, it represents a top-level location."
+locations,location_name,"The name of the location (e.g., ""City Name,"" ""State Name,"" ""Country Name"")."
+mans,id,The primary key uniquely identifying each manufacturer entry in the table.
+mans,is_car,"Indicates whether the manufacturer produces cars (true if yes, false if no)."
+mans,is_moto,"Indicates whether the manufacturer produces motorcycles (true if yes, false if no)."
+mans,is_spec,"Indicates whether the manufacturer produces special-purpose vehicles (true if yes, false if no)."
+mans,man_name,"The name of the manufacturer (e.g., ""Toyota,"" ""Honda"")."
+models,id,The primary key uniquely identifying each vehicle model entry in the table.
+models,man_id,A foreign key referencing the manufacturer (from the mans table) associated with the model.
+models,model_name,"The name of the vehicle model (e.g., ""Corolla,"" ""Civic"")."
+models,is_car,"Indicates whether the model is a car (true if yes, false if no)."
+models,is_moto,"Indicates whether the model is a motorcycle (true if yes, false if no)."
+models,is_spec,"Indicates whether the model is a special-purpose vehicle (true if yes, false if no)."
+price,app_id,The primary key linking the record to a specific vehicle listing in the application.
+price,price,The actual price of the vehicle as listed.
+price,price_value,The price of the vehicle in GEL (Georgian Lari).
+price,has_predicted_price,"Indicates whether a predicted price is available for this listing (true if yes, false if no)."
+price,predicted_price,"The predicted price of the vehicle, calculated based on factors such as depreciation and market trends."
+price,pred_first_breakpoint,"A calculated breakpoint in the predicted price range, representing the first threshold."
+price,pred_second_breakpoint,"A calculated breakpoint in the predicted price range, representing the second threshold."
+price,pred_min_price,The minimum predicted price for the vehicle.
+price,pred_max_price,The maximum predicted price for the vehicle.
+primary_features,app_id,The primary key linking the record to a specific vehicle listing.
+primary_features,fuel_type_id,"A foreign key referencing the fuel type of the vehicle (e.g., Petrol, Diesel)."
+primary_features,gear_type_id,"A foreign key referencing the gear type of the vehicle (e.g., Automatic, Manual)."
+primary_features,drive_type,"The type of drive system the vehicle uses, with possible values: front, rear, or 4X4."
+primary_features,door_type,"The door configuration of the vehicle, with possible values: 4/5, 2/3, or >5."
+primary_features,color_id,A foreign key referencing the vehicle's exterior color.
+primary_features,saloon_color_id,A foreign key referencing the interior saloon color of the vehicle.
+primary_features,man_id,A foreign key referencing the manufacturer of the vehicle.
+primary_features,model_id,A foreign key referencing the specific model of the vehicle.
+primary_features,location_id,A foreign key referencing the location of the vehicle.
+primary_features,saloon_material,"The material used in the vehicle's interior saloon (e.g., ""Leather,"" ""Fabric"")."

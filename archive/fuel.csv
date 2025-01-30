@@ -1,0 +1,12 @@
+﻿id,parent_id,fuel_type
+2,0,Petrol
+3,0,Diesel
+7,0,Electric
+11,0,Hybrid
+6,11,Hybrid
+10,11,Plug-in Hybrid
+5,0,Gas/Petrol
+9,5,LPG
+8,5,CNG
+12,0,Hydrogen
+0,0,Unknown

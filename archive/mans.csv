@@ -1,0 +1,562 @@
+﻿id,is_car,is_moto,is_spec,man_name
+473,True,False,False, Arcfox
+205,False,False,True, Farmtrac
+1039,False,False,True, Fruehauf
+1113,False,True,False, Hokii
+894,False,False,True,Abbey
+393,False,False,True,ABG
+215,False,True,False,ABM
+623,False,True,False,Access
+682,False,False,True,Acma
+70,True,False,False,Acura
+766,False,False,True,Adraf
+954,False,False,True,Agromasz 
+345,False,False,True,AGT
+145,False,True,False,Agusta
+854,False,False,True,Ahlmann
+642,True,False,False,Aion
+1145,False,False,True,Airman 
+1,True,False,False,Alfa Romeo
+216,False,True,False,Alfer
+441,True,False,False,AMC
+217,False,True,False,American Ironhorse
+1275,False,False,True,Antonio Carraro
+218,False,True,False,Apollo
+107,False,True,False,Aprilia
+418,False,False,True,Arbos
+565,False,True,False,Arctic Car
+367,False,True,False,Argo
+366,False,True,False,Ariic
+219,False,True,False,Arlen Ness
+220,False,True,False,Armada
+690,False,False,True,Armadora
+583,False,False,True,Armatrac
+221,False,True,False,Asiawing
+798,False,False,True,ASM Technology
+76,True,False,False,Aston Martin
+1013,False,False,True,Astra 
+355,False,False,True,Atlas
+810,False,True,False,ATV
+2,True,False,False,Audi
+222,False,True,False,Avantis
+1181,True,False,False,Avatr
+1129,False,True,False,Axis 
+223,False,True,False,Azel
+515,False,True,False,Azimut Yachts
+400,True,False,False,Baic
+1125,False,False,True,Baic Yinxiang 
+225,False,True,False,Bajaj
+999,False,False,True,Balkancar
+226,False,True,False,Baltmotors
+428,False,True,False,Bamx
+450,False,True,False,Baodiao
+227,False,True,False,Bars
+354,False,True,False,Bashan
+211,False,False,True,BCS
+830,True,False,False,Beijing
+120,False,False,True,Belarus
+1165,False,True,False,Benda
+352,False,True,False,Benelli
+78,True,False,False,Bentley
+1069,False,True,False,Benzhou 
+190,False,True,False,Beta
+229,False,True,False,Big Bear Choppers
+230,False,True,False,Big Dog Motocycles
+231,False,True,False,Bimota
+232,False,True,False,Blata
+1101,False,False,True,BMC
+3,True,True,False,BMW
+111,False,False,True,Bobcat
+198,False,False,True,Bomag
+1137,False,True,False,Bombardier 
+233,False,True,False,Boom Trikes
+234,False,True,False,Boss Hoss
+152,False,False,True,Branson
+204,False,False,True,Brenderoup
+206,False,False,True,Brentex
+207,True,False,False,Brilliance
+822,False,False,True,Broshuis
+124,False,True,False,BRP
+224,False,True,False,BSE
+235,False,True,False,Buccimoto
+196,False,True,False,Buell
+374,True,False,False,Bugatti
+69,True,False,False,Buick
+746,False,False,True,Burkon
+1051,False,False,True,Burstner
+87,True,False,False,BYD
+4,True,False,False,Cadillac
+139,False,True,False,Cagiva
+698,False,False,True,Cansa
+238,False,True,False,Carver
+121,False,False,True,Case
+71,False,False,True,Caterpillar
+1217,False,False,True,Cattaneo
+368,False,False,True,CBS
+239,False,True,False,Centurion
+236,False,True,False,CF Moto
+1283,False,False,True,CHALLENGER
+357,False,True,False,Champ
+161,True,False,True,Changan
+646,False,False,True,Changfa
+90,True,False,False,Changfeng
+84,True,False,False,Chery
+1059,False,False,True,Chesh
+5,True,False,True,Chevrolet
+182,False,False,True,CHL
+6,True,False,False,Chrysler
+434,False,False,True,CHTZ (ЧТЗ)
+7,True,False,True,Citroen
+1169,False,True,False,Citycoco
+119,False,False,True,Claas
+1047,False,False,True,Clark
+802,False,False,True,CLW
+240,False,True,False,Cobra
+241,False,True,False,Confederate
+237,True,True,False,CPI
+242,False,True,False,Cronus
+128,False,True,False,CZ
+457,True,False,False,Dacia
+339,False,True,False,Daelim
+8,True,False,True,Daewoo
+66,False,False,True,DAF
+9,True,False,True,Daihatsu
+537,True,False,False,Datsun
+1237,True,False,False,Dayun
+245,False,True,False,Deller
+838,False,False,True,Demag
+140,False,True,False,Derbi
+246,False,True,False,Desert Raven
+153,False,False,True,Detank
+154,False,False,True,Deutz Fahr
+846,False,False,True,Dewulf
+806,False,False,True,DFH
+890,False,False,True,Dieci
+866,False,False,True,Ditch-Witch
+243,False,True,False,DKW
+244,True,True,False,DM Telai
+127,False,True,False,Dnepr
+10,True,False,True,Dodge
+146,True,False,True,Dongfeng
+342,False,False,True,Doosan
+778,True,False,False,DS Automobiles
+461,False,False,True,DT
+81,False,True,False,Ducati
+370,False,False,True,Dynapac
+247,False,True,False,EBR
+950,False,False,True,Elibol
+391,False,False,True,Eougem
+1105,False,False,True,EP Equipment
+248,False,True,False,Eurotex
+991,True,False,False,Exeed
+387,False,True,False,Explorer
+1233,False,False,True,Fabo 
+249,False,True,False,Falcon
+1221,False,False,True,Fari
+706,False,False,True,Farmlead
+529,False,False,True,Fassi
+360,True,False,True,FAW
+177,False,False,True,Faymonville
+1043,False,False,True,Feldbinder  
+541,False,False,True,Fendt
+117,False,False,True,Fermec
+74,True,False,False,Ferrari
+11,True,False,True,Fiat
+116,False,False,True,Fiat-Hitachi
+250,False,True,False,Fighter
+251,False,True,False,Fine Custom Mechanics
+1021,False,False,True,Fintec
+183,True,False,False,Fisker
+12,True,False,True,Ford
+995,False,False,True,Ford Trucks
+252,False,True,False,Forsage
+157,True,False,True,Fortschritt
+611,False,True,False,Fosti
+143,True,False,True,Foton
+1193,False,False,True,Freightliner
+702,False,False,True,Fugesen
+253,False,True,False,Futong
+254,False,True,False,G-Max
+359,False,True,False,Gabro
+942,False,False,True,Gallignani 
+255,False,True,False,Gas Gas
+1093,False,False,True,Gayk
+45,True,False,True,GAZ
+89,True,False,False,Geely
+1153,False,True,False,Gemini
+577,True,False,False,Genesis
+389,False,False,True,Genie
+258,False,True,False,Gilera
+13,True,False,False,GMC
+962,False,False,True,Goldhofer
+631,False,True,False,Govecs
+256,False,True,False,GR
+138,True,False,False,Great wall
+842,False,False,True,Grimme
+259,False,True,False,Gryphon
+257,False,True,False,GX Moto
+130,True,False,True,Hafei
+343,False,False,True,Haihong
+394,False,False,True,Hamm
+670,False,False,True,Hangcha
+1265,False,True,False,HANGKAI
+213,False,True,False,Hanway
+104,False,True,False,Harley-Davidson
+826,False,False,True,Haulotte
+176,True,False,False,Haval
+902,False,False,True,Hebasan
+347,False,False,True,Heli
+882,False,True,False,Hero
+160,False,False,True,Hidromek
+385,False,False,True,Hino
+203,False,False,True,Hinomoto
+639,True,False,False,Hiphi
+694,False,False,True,Hisarlar
+358,False,True,False,Hisun
+396,False,False,True,Hitachi
+1067,False,True,False,HMT 
+14,True,True,True,Honda
+485,True,False,False,Hongqi
+260,False,True,False,Honling
+489,True,False,False,Huawei
+1177,True,False,False,Huawei Inside
+15,True,False,False,Hummer
+261,False,True,False,Husaberg
+180,False,True,True,Husqvarna
+262,False,True,False,Hyosung
+167,True,True,True,Hyster
+16,True,True,True,Hyundai
+834,False,False,True,IFA
+448,False,False,True,Ikarus
+983,False,True,False,Inca
+264,False,True,False,Indian
+53,True,False,False,Infiniti
+422,True,False,False,Iran Khodro
+263,False,True,False,Irbis
+1245,False,False,True,Irizar
+209,False,False,True,Iseki
+17,True,False,True,Isuzu
+62,True,False,True,Iveco
+1249,True,False,True,Izh
+85,True,False,True,JAC
+18,True,False,False,Jaguar
+762,False,False,True,Jar/Met
+106,False,True,False,Jawa
+110,False,False,True,JCB
+19,True,False,False,Jeep
+635,True,False,False,Jetour
+666,False,False,True,JF MIX
+406,False,True,False,Jialing
+269,False,True,False,Jianshe
+1257,False,True,False,Jinlun 
+714,False,False,True,Jinma
+265,False,True,False,JMC
+185,False,False,True,John Deere
+270,False,True,False,Johnny Pag
+1117,False,False,True,Jungheinrich
+918,False,False,True,Kadioglu
+533,False,False,True,Kama
+101,False,False,True,Kamaz
+159,True,False,True,Karsan
+726,False,False,True,Kato
+61,False,True,True,Kawasaki
+273,False,True,False,Kaxa Motors
+271,False,True,False,Kayo
+979,False,True,False,Kazuma 
+274,False,True,False,Keeway
+525,False,True,False,Kews
+20,True,False,True,Kia
+1271,False,False,True,KNAUS 
+730,False,False,True,Kobelco
+402,False,False,True,Kogel
+112,False,False,True,Komatsu
+858,False,False,True,Kramer
+108,False,False,True,KRAZ
+201,False,False,True,Krone
+105,False,True,False,KTM
+208,False,False,True,Kubota
+818,False,False,True,Kuhn
+906,False,False,True,Kverneland
+272,False,True,False,KXD
+275,False,True,False,Kymco
+782,False,False,True,Lamberet
+404,False,True,False,Lambertta
+73,True,False,False,Lamborghini
+21,True,False,False,Lancia
+22,True,False,False,Land Rover
+1157,False,False,True,Landini
+886,False,False,True,Langendorf
+1173,False,False,True,Lansu
+469,True,False,False,Leap Motor
+276,False,True,False,Legend
+23,True,False,False,Lexus
+142,False,False,True,Liebherr
+162,True,True,True,Lifan
+58,True,False,False,Lincoln
+615,True,False,True,Linde
+386,False,True,False,Linhai
+125,False,True,False,Lintex
+133,False,False,True,Liugong
+493,True,False,False,Lixiang
+277,False,True,False,Loncin
+379,False,True,False,Longjia
+401,True,False,True,Lonking
+1197,False,False,True,LOONG SHEEN
+341,True,False,False,Lotus
+197,False,False,True,Lovol
+377,True,False,False,LTI
+381,False,False,True,Luzhong
+627,False,True,False,LV Tong
+1261,True,False,False,Lynk & Co
+1253,False,False,True,MADENCILIK
+280,False,True,False,Malaguti
+65,False,False,True,MAN
+790,False,False,True,Manitou
+362,False,False,True,Mannesmann Demag
+718,False,False,True,Maschiao
+75,True,False,False,Maserati
+115,False,False,True,Massey Ferguson
+914,False,False,True,Mateng
+178,False,False,True,Maxtrailer
+80,True,False,False,Maybach
+102,False,False,True,MAZ
+24,True,False,True,Mazda
+1033,False,False,True,Mccloskey
+403,True,False,False,Mclaren
+898,False,False,True,MCMS
+511,False,False,True,Mecalac
+25,True,False,True,Mercedes-Benz
+26,True,True,False,Mercury
+862,False,False,True,Merlo
+1037,False,False,True,Metso
+166,True,False,False,MG
+281,False,True,False,Mikilon
+28,True,False,False,Mini
+282,False,True,False,Minsk
+29,True,False,True,Mitsubishi
+553,True,False,False,Mitsuoka
+123,False,True,False,Mondial
+48,True,False,False,Moskvich
+283,False,True,False,Motax
+181,False,True,False,Moto Guzzi
+284,False,True,False,Moto Morini
+285,False,True,False,Motoland
+371,False,False,True,MST
+1229,False,False,True,MTB
+1149,False,False,True,Multicar
+129,False,True,False,Muravey
+278,False,True,False,MV Agusta
+279,False,True,False,MZ
+57,False,False,True,Neoplan
+814,True,False,False,Neta
+1205,False,False,True,Neva
+114,False,False,True,New Holland
+286,False,True,False,Nexus
+179,True,True,True,Niewiadow
+603,True,False,False,NIO
+287,False,True,False,Nipponia
+30,True,False,True,Nissan
+349,False,True,False,NIU
+288,False,True,False,Norton
+1268,False,False,True,O&K
+356,False,True,False,Odes
+289,False,True,False,Ohvale
+56,True,False,False,Oldsmobile
+290,False,True,False,Omaks Motors
+31,True,False,True,Opel
+291,False,True,False,Orion
+72,False,True,True,Other
+388,False,False,True,Otokar
+926,False,False,True,Ozdoken
+930,False,False,True,Ozduman
+946,False,False,True,Paksan
+340,False,False,True,Palfinger
+292,False,True,False,Pannonia
+674,False,False,True,Parlayan
+293,False,True,False,Patron
+32,True,True,True,Peugeot
+194,False,True,False,Piaggio
+294,False,True,False,Pioneer
+295,False,True,False,Pitster Pro
+136,False,True,False,Polaris
+1209,True,False,False,Polestar
+794,False,False,True,Pom Augustow
+54,True,False,False,Pontiac
+214,False,True,False,Pony
+33,True,False,False,Porsche
+1213,False,False,True,Potain 
+1003,False,False,True,PPM
+296,False,True,False,Progasi
+410,True,False,False,Proton
+1185,False,True,False,Quicsilver
+297,False,True,False,Racer
+1225,False,False,True,Raimondi
+523,False,True,False,Regal Boats
+298,False,True,False,Regal Raptor
+299,False,True,False,Reggy
+300,False,True,False,Regulmoto
+934,False,False,True,Remet
+34,True,False,True,Renault
+786,True,False,False,Renault Samsung
+678,False,False,True,Ricosma 
+301,False,True,False,Rieju
+966,False,False,True,Rippa
+974,False,True,False,RKS
+88,True,False,False,Roewe
+302,False,True,False,Rokon
+758,False,False,True,Rol/Ex
+79,True,False,False,Rolls-Royce
+938,False,False,True,Rolmet
+35,True,False,False,Rover
+378,False,True,False,Royal Alloy
+303,False,True,False,Royal Enfield
+304,False,True,False,Rucker Perfomance
+305,False,True,False,S2 Motors
+36,True,False,False,Saab
+306,False,True,False,Sachs
+710,False,False,True,Sadin
+770,False,False,True,Safer
+1010,False,True,False,Safter
+307,False,True,False,Sagitta
+922,False,False,True,Sakalak
+77,True,False,False,Saleen
+365,False,False,True,Sampo Rosenlew
+1025,False,False,True,Sandvik
+373,False,False,True,Sany
+444,False,True,False,Sanyou
+754,False,False,True,Saragri
+93,True,False,False,Saturn
+308,False,True,False,Saxon
+82,False,False,True,Scania
+67,False,False,True,Schmitz Cargobull 
+1133,False,False,True,Schwarzmuller
+55,True,False,False,Scion
+372,False,False,True,SDLG
+742,False,True,False,Sea Ray
+37,True,False,False,Seat
+395,False,False,True,SEM
+1085,False,False,True,Sennebogen 
+109,False,False,True,Setra
+163,False,False,True,Shacman
+351,False,False,True,Shantui
+662,False,False,True,Shanyu
+309,False,True,False,Sherco
+310,False,True,False,Siamoto
+870,False,False,True,Simex
+1109,False,False,True,Simpa
+311,False,True,False,Simson
+348,False,True,False,Sinnis
+132,False,False,True,Sinotruk HOWO
+987,False,True,False,Ski-doo
+1055,False,False,True,SKIF 
+38,True,False,False,Skoda
+312,False,True,False,Skygo
+1016,True,False,False,Skywell 
+424,True,False,False,Smart
+1279,False,False,True,Snorkel
+1097,False,False,True,Soilmec
+350,False,False,True,Solis
+313,False,True,False,Sonik
+397,True,False,False,Soueast
+1077,False,False,True,Spierings 
+64,True,False,False,Ssangyong
+392,False,False,True,STA
+314,False,True,False,Stels
+1121,False,False,True,Steyr Daimler Puch
+315,False,True,False,Stingray
+39,True,False,True,Subaru
+369,False,False,True,Sumitomo
+316,False,True,False,Super Soco
+432,False,True,False,Sur-Ron
+40,True,True,True,Suzuki
+317,False,True,True,Swift
+212,False,True,False,SWM
+195,False,True,False,SYM
+320,False,True,False,Tacita
+738,False,False,True,Tadano
+654,False,False,True,Taishan
+92,True,False,True,Tata
+557,False,True,False,Tauris
+658,False,False,True,Tavol
+202,False,False,True,TCM
+1081,False,False,True,Tecnoma 
+364,False,False,True,Temsa
+188,False,False,True,Terberg
+113,False,False,True,Terex
+155,True,True,False,Tesla
+519,False,True,False,Tesoro Yachts
+607,False,True,False,Teyin
+437,False,True,False,TGB
+321,False,True,False,Titan
+318,False,True,False,TM Racing
+338,False,True,False,TMZ
+361,False,True,False,Toyomax
+41,True,False,True,Toyota
+322,False,True,False,Travertson
+141,False,True,False,Triumph
+579,False,False,True,Tumosan
+910,False,False,True,Turan
+1089,False,False,True,Turchi 
+319,False,True,False,TVS
+95,True,False,True,UAZ
+323,False,True,False,UM
+750,False,False,True,Untar
+189,False,True,False,UNU
+156,False,True,True,Ural
+186,False,False,True,Valtra
+363,False,False,True,Van Hool
+44,True,False,False,VAZ
+324,False,True,False,Ventu
+874,False,False,True,Vermeer
+193,False,True,False,Vespa
+325,False,True,False,Victory
+958,False,False,True,Vilagro
+326,False,True,False,Viper
+327,False,True,False,Virus
+1141,False,False,True,VIS 
+465,False,False,True,Vladimerec
+1161,False,True,False,Voge
+774,False,False,True,VÖGELE
+734,False,False,True,Vogelzang
+42,True,False,True,Volkswagen
+850,False,False,True,Vollernter
+43,True,False,True,Volvo
+126,False,True,False,Voskhod
+481,True,False,False,Voyah
+328,False,True,False,Vyrus
+561,False,True,False,Wangye
+1029,False,False,True,Warrior
+1189,False,False,True,Waymeck
+329,False,True,False,Wels
+1073,False,False,True,Wirtgen
+1201,False,True,False,X scooters
+722,False,False,True,XCMG
+346,False,False,True,XGMA
+1241,True,False,False,Xiaomi
+1007,False,False,True,XILIN 
+158,True,False,True,Xingtai
+330,False,True,False,Xmotos
+497,True,False,False,Xpeng
+59,False,True,False,Yamaha
+332,False,True,False,Yamasaki
+210,False,False,True,Yanmar
+331,False,True,False,YCF
+1063,False,True,False,YIBEN
+333,False,True,False,Yinxiang
+390,True,False,True,YTO
+591,True,False,False,Yuanxin Energy's
+686,False,False,True,Yuksan 
+97,True,False,True,ZAZ
+477,True,False,False,Zeekr
+122,False,False,True,Zeppelin
+334,False,True,False,Zero
+344,False,False,True,Zetor
+878,False,False,True,Zide
+99,False,False,True,ZIL
+380,False,True,False,Znen
+336,False,True,False,Zongshen
+337,False,True,False,Zontes
+131,False,False,True,Zoomlion
+978,False,False,True,ZTM
+549,True,False,False,Zukida
+376,True,False,False,Zxauto

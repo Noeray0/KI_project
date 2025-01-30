@@ -1,0 +1,7 @@
+﻿id,parent_id,gear_type
+1,0,Manual
+2,5,Automatic
+3,5,Tiptronic
+4,5,Variator
+5,0,Automatic
+0,0,Unknown
