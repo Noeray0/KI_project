@@ -1,15 +1,18 @@
 # Import necessary libraries
 import pandas as pd
 import numpy as np
-from keras.models import Sequential
-from keras.layers import Input, Dense, Dropout
-from sklearn import datasets
+import seaborn as sns
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error, r2_score
 import warnings
 
 # Suppress warnings
 warnings.filterwarnings('ignore')
+
+# Ensure inline plotting
+
 
 # Load datasets
 price_df = pd.read_csv('archive/price.csv')
@@ -27,7 +30,7 @@ gear_df = pd.read_csv('archive/gear.csv')
 locations_df = pd.read_csv('archive/locations.csv')
 mans_df = pd.read_csv('archive/mans.csv')
 print("done")
-# Check for missing values in the price dataset
+
 
 # Check for missing values in the price dataset
 price_df.isnull().sum()
@@ -36,33 +39,27 @@ price_df.isnull().sum()
 applications_df['upload_date'] = pd.to_datetime(applications_df['upload_date'], errors='coerce')
 applications_df['insert_date'] = pd.to_datetime(applications_df['insert_date'], errors='coerce')
 
+# Merge datasets for model building
+merged_df = pd.merge(price_df, depreciation_df, on='app_id')
 
-archive = datasets.load_archive()
-X = archive.data                        # Matrix mit Features × Datensätze
-y = archive.target.reshape(-1, 1)       # Labels
-
-print("done")
-
-# One-hot encode the target variable
-encoder = OneHotEncoder(sparse_output=False)
-y_one_hot = encoder.fit_transform(y)
+# Select features and target variable
+features = ['car_run_km', 'engine_volume', 'cylinders', 'airbags']
+X = merged_df[features]
+y = merged_df['price']
 
 # Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y_one_hot, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Define the model
-model = Sequential()
-model.add(Input(shape=(4,)))
-model.add(Dense(8, activation='relu'))
-model.add(Dropout(0.1))
-model.add(Dense(3, activation='softmax'))
+# Initialize and train the model
+model = RandomForestRegressor(random_state=42)
+model.fit(X_train, y_train)
 
-# Compile the model
-model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-
-# Train the model
-model.fit(X_train, y_train, epochs=50, batch_size=32, validation_split=0.2)
+# Make predictions
+y_pred = model.predict(X_test)
 
 # Evaluate the model
-loss, accuracy = model.evaluate(X_test, y_test)
-print(f'Loss: {loss}, Accuracy: {accuracy}')
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+print(f"mean squared error (whatever that is):{mse}, r2_score:{r2}")
+
+print("done")
