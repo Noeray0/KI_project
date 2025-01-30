@@ -32,3 +32,9 @@ mans_df = pd.read_csv('archive/mans.csv')
 print("done")
 # Check for missing values in the price dataset
 
+# Check for missing values in the price dataset
+price_df.isnull().sum()
+
+# Convert date columns to datetime in applications_df
+applications_df['upload_date'] = pd.to_datetime(applications_df['upload_date'], errors='coerce')
+applications_df['insert_date'] = pd.to_datetime(applications_df['insert_date'], errors='coerce')
