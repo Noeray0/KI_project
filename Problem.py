@@ -39,9 +39,27 @@ price_df.isnull().sum()
 applications_df['upload_date'] = pd.to_datetime(applications_df['upload_date'], errors='coerce')
 applications_df['insert_date'] = pd.to_datetime(applications_df['insert_date'], errors='coerce')
 
-# Visualize the distribution of car prices
-sns.histplot(price_df['price'], bins=50, kde=True)
-plt.title('Distribution of Car Prices')
-plt.xlabel('Price')
-plt.ylabel('Frequency')
-plt.show()
+# Merge datasets for model building
+merged_df = pd.merge(price_df, depreciation_df, on='app_id')
+
+# Select features and target variable
+features = ['car_run_km', 'engine_volume', 'cylinders', 'airbags', 'car_age']
+X = merged_df[features]
+y = merged_df['price']
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Initialize and train the model
+model = RandomForestRegressor(random_state=42)
+model.fit(X_train, y_train)
+
+# Make predictions
+y_pred = model.predict(X_test)
+
+# Evaluate the model
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+mse, r2
+
+print("done")
