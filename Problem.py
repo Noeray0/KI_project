@@ -41,7 +41,7 @@ applications_df['insert_date'] = pd.to_datetime(applications_df['insert_date'], 
 merged_df = pd.merge(price_df, depreciation_df, on='app_id')
 
 # Select features and target variable
-features = ['car_run_km', 'engine_volume', 'cylinders', 'airbags']
+features = ['car_run_km', 'engine_volume', 'prod_year', 'cylinders', 'airbags']
 X = merged_df[features]
 y = merged_df['price']
 
@@ -62,7 +62,7 @@ model.compile(optimizer='adam', loss='mean_squared_error', metrics=['accuracy'])
 
 early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 #train the model
-model.fit(X_train, y_train, epochs=50, batch_size=32, validation_split=0.2, callbacks=[early_stopping])
+model.fit(X_train, y_train, epochs=60, batch_size=32, validation_split=0.2, callbacks=[early_stopping])
 
 loss, accuracy = model.evaluate(X_test, y_test)
 print(f'Loss: {loss}, Accuracy: {accuracy}')
@@ -84,13 +84,15 @@ while Continue == 'y':
             user_input[feature] = int(input("Enter the car's mileage (in km): "))
         elif feature == 'engine_volume':
             user_input[feature] = float(input("Enter the car's engine volume (in liters): "))
+        elif feature == 'prod_year':
+            user_input[feature] = int(input("Enter the year of production: "))
         elif feature == 'cylinders':
             user_input[feature] = int(input("Enter the number of cylinders in the engine: "))
         elif feature == 'airbags':
             user_input[feature] = int(input("Enter the number of airbags in the car: "))
 
     # Convert user input into a format suitable for prediction
-    input_data = np.array([[user_input['car_run_km'], user_input['engine_volume'], user_input['cylinders'], user_input['airbags']]])
+    input_data = np.array([[user_input['car_run_km'], user_input['engine_volume'], user_input['prod_year'], user_input['cylinders'], user_input['airbags']]])
 
     # Use the trained model to predict the price
     predicted_price = model.predict(input_data)
