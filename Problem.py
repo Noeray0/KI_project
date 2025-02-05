@@ -7,11 +7,6 @@ import numpy as np
 from keras.models import Sequential
 from keras.layers import Input, Dense, Dropout
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import OneHotEncoder
-
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error, r2_score
 import warnings
 
 # Suppress warnings
@@ -52,14 +47,18 @@ y = merged_df['price']
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+print(y_train.shape)
+
 # Initialize and train the model
 model = Sequential()
-model.add(Input(shape = (4, )))
-model.add(Dense(8))
+model.add(Input(shape = (X_train.shape[1],)))
+model.add(Dense(64, activation = 'relu'))
 model.add(Dropout(0.1))
-model.add(Dense(8))
+model.add(Dense(32, activation = 'relu'))
+model.add(Dense(1))
 
-model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+model.compile(optimizer='adam', loss='mean_squared_error', metrics=['accuracy'])
 
 # Train the model
 model.fit(X_train, y_train, epochs=50, batch_size=32, validation_split=0.2)
