@@ -6,6 +6,7 @@ import numpy as np
 
 from keras.models import Sequential
 from keras.layers import Input, Dense, Dropout
+from keras.callbacks import EarlyStopping
 from sklearn.model_selection import train_test_split
 import warnings
 
@@ -47,8 +48,6 @@ y = merged_df['price']
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-print(y_train.shape)
-
 # Initialize and train the model
 model = Sequential()
 model.add(Input(shape = (X_train.shape[1],)))
@@ -57,13 +56,45 @@ model.add(Dropout(0.1))
 model.add(Dense(32, activation = 'relu'))
 model.add(Dense(1))
 
+early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 
 model.compile(optimizer='adam', loss='mean_squared_error', metrics=['accuracy'])
 
-# Train the model
-model.fit(X_train, y_train, epochs=50, batch_size=32, validation_split=0.2)
+early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+#train the model
+model.fit(X_train, y_train, epochs=50, batch_size=32, validation_split=0.2, callbacks=[early_stopping])
 
 loss, accuracy = model.evaluate(X_test, y_test)
 print(f'Loss: {loss}, Accuracy: {accuracy}')
 
-print("done")
+print("Model training done")
+
+# Now, ask the user for the features they want to input
+print("\nPlease answer the following questions to get a price estimate:")
+
+Continue = 'y'
+
+while Continue == 'y':
+    # Create an empty dictionary to store the user's inputs
+    user_input = {}
+
+    # Ask for user input for each feature
+    for feature in features:
+        if feature == 'car_run_km':
+            user_input[feature] = int(input("Enter the car's mileage (in km): "))
+        elif feature == 'engine_volume':
+            user_input[feature] = float(input("Enter the car's engine volume (in liters): "))
+        elif feature == 'cylinders':
+            user_input[feature] = int(input("Enter the number of cylinders in the engine: "))
+        elif feature == 'airbags':
+            user_input[feature] = int(input("Enter the number of airbags in the car: "))
+
+    # Convert user input into a format suitable for prediction
+    input_data = np.array([[user_input['car_run_km'], user_input['engine_volume'], user_input['cylinders'], user_input['airbags']]])
+
+    # Use the trained model to predict the price
+    predicted_price = model.predict(input_data)
+
+    print(f"\nThe estimated price of the car based on the given features is: ${predicted_price[0][0]:.2f}")
+
+    Continue = input("Do you wish to continue (y/n):")
