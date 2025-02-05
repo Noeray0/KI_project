@@ -1,3 +1,5 @@
+""" https://www.kaggle.com/datasets/qubdidata/auto-market-dataset """
+
 # Import necessary libraries
 import pandas as pd
 import numpy as np
@@ -10,9 +12,6 @@ import warnings
 
 # Suppress warnings
 warnings.filterwarnings('ignore')
-
-# Ensure inline plotting
-
 
 # Load datasets
 price_df = pd.read_csv('archive/price.csv')
