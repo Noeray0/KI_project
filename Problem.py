@@ -82,7 +82,7 @@ while Continue == 'y':
     # Ask for user input for each feature
     for feature in features:
         if feature == 'car_run_km':
-            user_input[feature] = int(input("Enter the car's mileage (in km): "))
+            user_input[feature] = int(input("\nEnter the car's mileage (in km): "))
         elif feature == 'engine_volume':
             user_input[feature] = float(input("Enter the car's engine volume (in liters): "))
         elif feature == 'prod_year':
@@ -98,6 +98,6 @@ while Continue == 'y':
     # Use the trained model to predict the price
     predicted_price = model.predict(input_data)
 
-    print(f"\nThe estimated price of the car based on the given features is: ${predicted_price[0][0]:.2f}")
+    print(f"The estimated price of the car based on the given features is: ${predicted_price[0][0]:.2f}")
 
-    Continue = input("Do you wish to continue (y/n):")
+    Continue = input("\nDo you wish to continue (y/n):")
