@@ -1,4 +1,5 @@
 # https://www.kaggle.com/datasets/qubdidata/auto-market-dataset
+"""https://github.com/Noeray0/KI_project"""
 
 # Import necessary libraries
 import pandas as pd
@@ -62,7 +63,7 @@ model.compile(optimizer='adam', loss='mean_squared_error', metrics=['accuracy'])
 
 early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 #train the model
-model.fit(X_train, y_train, epochs=60, batch_size=32, validation_split=0.2, callbacks=[early_stopping])
+model.fit(X_train, y_train, epochs=75, batch_size=32, validation_split=0.2, callbacks=[early_stopping])
 
 loss, accuracy = model.evaluate(X_test, y_test)
 print(f'Loss: {loss}, Accuracy: {accuracy}')
